@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-19T01:45:00.000Z",
+  "title": "Design System: QR Code",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Azul Técnico",
+        "canonical": "oklch(45% 0.15 250)",
+        "tonalRamp": ["oklch(25% 0.15 250)", "oklch(35% 0.15 250)", "oklch(45% 0.15 250)", "oklch(55% 0.15 250)", "oklch(65% 0.12 250)", "oklch(75% 0.08 250)", "oklch(85% 0.04 250)", "oklch(95% 0.01 250)"]
+      },
+      "primary-deep": {
+        "role": "primary",
+        "displayName": "Azul Profundo",
+        "canonical": "oklch(38% 0.15 250)",
+        "tonalRamp": ["oklch(20% 0.15 250)", "oklch(30% 0.15 250)", "oklch(38% 0.15 250)", "oklch(48% 0.15 250)", "oklch(58% 0.12 250)", "oklch(68% 0.08 250)", "oklch(78% 0.04 250)", "oklch(88% 0.01 250)"]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Cinza Pedra",
+        "canonical": "oklch(96% 0.005 260)",
+        "tonalRamp": ["oklch(15% 0.005 260)", "oklch(30% 0.005 260)", "oklch(45% 0.005 260)", "oklch(60% 0.005 260)", "oklch(75% 0.005 260)", "oklch(85% 0.005 260)", "oklch(92% 0.005 260)", "oklch(96% 0.005 260)"]
+      },
+      "neutral-surface": {
+        "role": "neutral",
+        "displayName": "Superfície",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(30% 0 0)", "oklch(45% 0 0)", "oklch(60% 0 0)", "oklch(75% 0 0)", "oklch(85% 0 0)", "oklch(95% 0 0)", "oklch(100% 0 0)"]
+      },
+      "neutral-border": {
+        "role": "neutral",
+        "displayName": "Cinza Grafite",
+        "canonical": "oklch(85% 0.008 260)",
+        "tonalRamp": ["oklch(20% 0.008 260)", "oklch(35% 0.008 260)", "oklch(50% 0.008 260)", "oklch(65% 0.008 260)", "oklch(78% 0.008 260)", "oklch(85% 0.008 260)", "oklch(90% 0.005 260)", "oklch(95% 0.003 260)"]
+      },
+      "neutral-muted": {
+        "role": "neutral",
+        "displayName": "Cinza Silêncio",
+        "canonical": "oklch(62% 0.01 260)",
+        "tonalRamp": ["oklch(25% 0.01 260)", "oklch(38% 0.01 260)", "oklch(50% 0.01 260)", "oklch(62% 0.01 260)", "oklch(72% 0.008 260)", "oklch(82% 0.005 260)", "oklch(90% 0.003 260)", "oklch(95% 0.002 260)"]
+      },
+      "critical": {
+        "role": "critical",
+        "displayName": "Vermelho Crítico",
+        "canonical": "oklch(45% 0.2 25)",
+        "tonalRamp": ["oklch(20% 0.2 25)", "oklch(30% 0.2 25)", "oklch(40% 0.2 25)", "oklch(45% 0.2 25)", "oklch(55% 0.18 25)", "oklch(65% 0.14 25)", "oklch(75% 0.08 25)", "oklch(90% 0.03 25)"]
+      },
+      "critical-deep": {
+        "role": "critical",
+        "displayName": "Vermelho Profundo",
+        "canonical": "oklch(38% 0.2 25)",
+        "tonalRamp": ["oklch(15% 0.2 25)", "oklch(25% 0.2 25)", "oklch(35% 0.2 25)", "oklch(38% 0.2 25)", "oklch(48% 0.18 25)", "oklch(58% 0.14 25)", "oklch(68% 0.08 25)", "oklch(85% 0.03 25)"]
+      },
+      "success": {
+        "role": "success",
+        "displayName": "Verde Confirmação",
+        "canonical": "oklch(70% 0.17 145)",
+        "tonalRamp": ["oklch(25% 0.17 145)", "oklch(40% 0.17 145)", "oklch(55% 0.17 145)", "oklch(65% 0.17 145)", "oklch(70% 0.17 145)", "oklch(80% 0.12 145)", "oklch(88% 0.06 145)", "oklch(95% 0.02 145)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Título principal do app. Aparece uma vez." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos de seção. Hierarquia clara." },
+      "title": { "displayName": "Title", "purpose": "Títulos de componente, labels de card." },
+      "body": { "displayName": "Body", "purpose": "Texto corrido, descrições, resultados." },
+      "label": { "displayName": "Label", "purpose": "Botões, tabs, badges. Ações interativas." },
+      "caption": { "displayName": "Caption", "purpose": "Timestamps, contadores, metadata." }
+    },
+    "shadows": [
+      { "name": "ambient", "value": "0 2px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02)", "purpose": "Container principal (app card). Presença sutil, não dramática." },
+      { "name": "interactive", "value": "0 1px 3px rgba(0,0,0,0.04)", "purpose": "Cards ativos, tabs selecionados. Estado, não decoração." },
+      { "name": "tooltip", "value": "0 4px 20px rgba(0,0,0,0.15)", "purpose": "Toast, tooltip. Camada superior, comunicar urgência." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.25, 0.1, 0.25, 1)", "purpose": "Transições padrão de estado (hover, focus, active)." },
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Entrada de elementos (toast, overlay)." },
+      { "name": "duration-fast", "value": "150ms", "purpose": "Feedback imediato (scale, color shift)." },
+      { "name": "duration-normal", "value": "200ms", "purpose": "Transições de estado padrão." },
+      { "name": "duration-slow", "value": "350ms", "purpose": "Entrada/saída de elementos (toast, panels)." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "480px" },
+      { "name": "tablet", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Botão de ação primária. Azul técnico com texto branco.",
+      "html": "<button class=\"ds-btn-primary\">Ação</button>",
+      "css": ".ds-btn-primary { background: #0040a0; color: #ffffff; padding: 10px 20px; border: none; border-radius: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 0.8125rem; font-weight: 500; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease; } .ds-btn-primary:hover { background: #003380; } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid #0040a0; outline-offset: 2px; } .ds-btn-primary:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Botão secundário. Cinza neutro com texto escuro.",
+      "html": "<button class=\"ds-btn-secondary\">Cancelar</button>",
+      "css": ".ds-btn-secondary { background: #e8e8ed; color: #1d1d1f; padding: 10px 20px; border: none; border-radius: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 0.8125rem; font-weight: 500; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease; } .ds-btn-secondary:hover { background: #d1d1d6; } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid #0040a0; outline-offset: 2px; }"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Botão de ação destrutiva. Vermelho crítico.",
+      "html": "<button class=\"ds-btn-danger\">Excluir</button>",
+      "css": ".ds-btn-danger { background: #c6201a; color: #ffffff; padding: 10px 20px; border: none; border-radius: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 0.8125rem; font-weight: 500; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease; } .ds-btn-danger:hover { background: #a31b16; } .ds-btn-danger:active { transform: scale(0.97); } .ds-btn-danger:focus-visible { outline: 2px solid #c6201a; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Campo de entrada de texto. Borda sutil, fundo claro.",
+      "html": "<input class=\"ds-input-text\" type=\"text\" placeholder=\"Digite aqui...\" />",
+      "css": ".ds-input-text { width: 100%; padding: 12px 16px; border: 1.5px solid #d1d1d6; border-radius: 12px; background: #fafafa; color: #1d1d1f; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 0.9375rem; outline: none; transition: border-color 0.2s ease, background 0.2s ease; } .ds-input-text:focus { border-color: #0040a0; background: #ffffff; } .ds-input-text::placeholder { color: #8e8e93; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Container principal. Superfície branca com sombra sutil.",
+      "html": "<div class=\"ds-card\"><p>Conteúdo</p></div>",
+      "css": ".ds-card { background: #ffffff; border-radius: 16px; padding: 32px 28px; box-shadow: 0 2px 20px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02); transition: background 0.3s ease, box-shadow 0.3s ease; }"
+    },
+    {
+      "name": "Tab",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "Navegação por abas. Container com fundo cinza, tabs com radius.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab ds-tab--active\">Ativo</button><button class=\"ds-tab\">Inativo</button></div>",
+      "css": ".ds-tabs { display: flex; gap: 0.5rem; background: #f5f5f7; border-radius: 12px; padding: 0.25rem; } .ds-tab { flex: 1; border: none; background: transparent; padding: 10px 0; border-radius: 10px; font-size: 0.8125rem; font-weight: 500; color: #515154; cursor: pointer; transition: all 0.2s ease; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif; } .ds-tab:hover { color: #1d1d1f; } .ds-tab--active { background: #ffffff; color: #1d1d1f; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }"
+    },
+    {
+      "name": "Toast",
+      "kind": "custom",
+      "refersTo": "toast",
+      "description": "Notificação temporária. Fundo escuro, texto branco, posição fixa.",
+      "html": "<div class=\"ds-toast\">Mensagem</div>",
+      "css": ".ds-toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(80px); background: #1d1d1f; color: #ffffff; padding: 0.75rem 1.5rem; border-radius: 12px; font-size: 0.8125rem; font-weight: 500; opacity: 0; transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); pointer-events: none; z-index: 50; box-shadow: 0 4px 20px rgba(0,0,0,0.15); } .ds-toast--show { opacity: 1; transform: translateX(-50%) translateY(0); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Relojoeiro Suíço",
+    "overview": "Precisão alemã com alma japonesa. Funcionalidade como estética. Este sistema visual existe para desaparecer na tarefa — o usuário lê ou gera um QR Code e segue com a vida. Cada elemento é um instrumento calibrado, não uma decoração.\n\nO app rejeita propagandas, pop-ups, cadastros e dados na nuvem. Rejeita interfaces cluttered com muitas opções. Rejeita o design genérico de 'app de QR Code' que parece todos os outros. A identidade é construída sobre silêncio funcional: o design fala menos para que o usuário faça mais.",
+    "keyCharacteristics": [
+      "Silêncio funcional — elementos existem apenas quando precisam existir",
+      "Precisão milimétrica — cada pixel tem um propósito",
+      "Feedback sutil — confirmação visual sem drama",
+      "Confiabilidade mecânica — a interface transmite que funciona"
+    ],
+    "rules": [
+      { "name": "The 10% Rule", "body": "O azul primário é usado em ≤10% de qualquer tela. Sua raridade é o ponto. Se tudo é azul, nada é azul.", "section": "colors" },
+      { "name": "The Instrument Rule", "body": "A tipografia nunca chama atenção para si mesma. Se o usuário percebe a fonte, algo está errado. A hierarquia é feita por peso e tamanho, nunca por estilo decorativo.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Superfícies são planas em repouso. Sombras aparecem apenas como resposta a estado (hover, elevação, foco). Nunca como ornamento.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do manter o azul primário em ≤10% da superfície — raridade comunica importância",
+      "Do usar sistema de fontes (SF Pro / system-ui) — confiabilidade mecânica",
+      "Do aplicar sombras apenas em estado interativo — flat-by-default",
+      "Do manter transições em 200ms — feedback sem espera",
+      "Do usar alta contraste no texto (#1d1d1f em fundo claro) — legibilidade não negocial",
+      "Do implementar modo alto contraste para acessibilidade — preto absoluto, branco absoluto",
+      "Do manter border-radius consistente (10px para interativos, 12-20px para containers)",
+      "Do dar feedback visual em cada interação (hover, active, focus) — o usuário sabe que clicou"
+    ],
+    "donts": [
+      "Don't usar propagandas, pop-ups ou cadastros — anti-referência direta do PRODUCT.md",
+      "Don't criar interfaces cluttered com muitas opções — simplicidade radical",
+      "Don't enviar dados para servidores — privacidade por padrão",
+      "Don't usar design genérico de 'app de QR Code' — cada elemento deve ser intencional",
+      "Don't usar gradient text (background-clip: text) — decorativo, nunca significativo",
+      "Don't usar glassmorphism como padrão — blur decorativo é proibido",
+      "Don't colocar sombras em todo lugar — sombras são para estado, não ornamento",
+      "Don't usar fontes display em labels ou botões — instrumentos, não vozes",
+      "Don't animar propriedades de layout — motion é para estado, não decoração",
+      "Don't criar modais como primeiro pensamento — inline/progressive primeiro",
+      "Don't usar cores saturadas em estados inativos — confunde a hierarquia",
+      "Don't inventar affordances padrão — scrollbars custom, controles estranhos"
+    ]
+  }
+}
